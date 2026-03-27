@@ -29,11 +29,11 @@ export default function RaceTrack({ race, racers }: RaceTrackProps) {
   const finishX = START_X + trackWidth;
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full">
       <svg
         viewBox={`0 0 ${svgWidth} ${svgHeight}`}
-        className="w-full min-w-[700px]"
-        style={{ maxHeight: "80vh" }}
+        className="w-full"
+        preserveAspectRatio="xMidYMid meet"
       >
         {/* Background */}
         <rect width={svgWidth} height={svgHeight} fill="#fafafa" rx={12} />
